@@ -3,82 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chartered Accountant Firm</title>
+  <title>ABC Chartered Accountants</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-    body { background: #f7f9fc; color: #333; line-height: 1.6; }
-    header { background: #0a2e5c; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
-    .hero { padding: 60px 20px; text-align: center; background: #e6eef7; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    .hero p { font-size: 1.2rem; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    h2 { margin-bottom: 20px; color: #0a2e5c; }
-    .services ul { list-style: none; padding-left: 0; }
-    .services li { margin-bottom: 10px; }
-    .team-member { margin-bottom: 15px; }
-    footer { background: #0a2e5c; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; }
-    .contact-form button { background: #0a2e5c; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #0a2e5c, #1e4e8c);
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: #e6eef7;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0a2e5c;
+    }
+    .services ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .team-member {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background: #0a2e5c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    footer {
+      background: #0a2e5c;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>ABC Chartered Accountants</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Your Trusted Financial Partner</h1>
-    <p>We combine technical expertise with practical insight to help clients make confident financial decisions.</p>
-  </section>
+<header>
+  <h1>ABC Chartered Accountants</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a Chartered Accountant firm providing end-to-end financial services. Our mission is to deliver clear, practical, and compliant solutions tailored to each client’s needs.</p>
-  </section>
+<section class="hero">
+  <h1>Expert Guidance for Your Financial Growth</h1>
+  <p>Professional chartered accounting services tailored for individuals, businesses, and corporations.</p>
+</section>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>✔️ Taxation & GST Filing</li>
-      <li>✔️ Statutory & Internal Audit</li>
-      <li>✔️ Accounting & Bookkeeping</li>
-      <li>✔️ Business Advisory</li>
-      <li>✔️ Compliance & Regulatory Services</li>
-    </ul>
-  </section>
+<section id="about">
+  <h2>About Us</h2>
+  <p>ABC Chartered Accountants is a trusted firm offering a full range of services including tax planning, audits, corporate structuring, and compliance advisory. Our team brings over a decade of experience and deep expertise in Indian and international accounting standards.</p>
+</section>
 
-  <section id="team">
-    <h2>Our Team</h2>
-    <div class="team-member">
-      <strong>CA John Doe</strong> – Founder & Partner<br />
-      10+ years of experience in tax advisory and audit.
-    </div>
-    <div class="team-member">
-      <strong>CA Jane Smith</strong> – Partner<br />
-      Specialist in GST, compliance, and corporate structuring.
-    </div>
-  </section>
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>✔️ Income Tax Returns (ITR)</li>
+    <li>✔️ GST Filing and Consultation</li>
+    <li>✔️ Internal and Statutory Audits</li>
+    <li>✔️ Financial Statement Preparation</li>
+    <li>✔️ Startup Advisory and Incorporation</li>
+    <li>✔️ ROC and MCA Compliance</li>
+  </ul>
+</section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+<section id="team">
+  <h2>Meet Our Team</h2>
+  <div class="team-member">
+    <strong>CA Priya Sharma</strong><br />
+    Co-Founder | Expert in Direct Taxes & Corporate Finance
+  </div>
+  <div class="team-member">
+    <strong>CA Rahul Mehta</strong><br />
+    Partner | Specialist in GST, Startup Advisory & Compliance
+  </div>
+</section>
 
-  <footer>
-    &copy; 2025 ABC Chartered Accountants | All rights reserved.
-  </footer>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 ABC Chartered Accountants. All rights reserved.
+</footer>
+
 </body>
 </html>
